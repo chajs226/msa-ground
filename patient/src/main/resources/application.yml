@@ -1,3 +1,12 @@
+server:
+  port: 8091
+  max-http-header-size: 16KB
+  shutdown: graceful
+  servlet.encoding:
+    charset: UTF-8
+    force: true
+    enabled: true
+
 spring:
   datasource:
     url: jdbc:h2:tcp://localhost/~/patient
